@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>
+     Murilo Tampletes páginas workflash
+    </title>
+    <style>
+
+.banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 89vh;
+  text-align: center;
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+.banner-content {
+  position: absolute;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo do Título Principal */
+.banner-headline {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Estilo do Subtítulo */
+.banner-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: 300;
+  color: #e0e0e0; /* Tom de cinza claro para contraste */
+}
+
+/* Botão de CTA */
+.banner-button {
+  padding: 10px 30px;
+  font-size: 1rem;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.banner-button:hover {
+  background-color: #fff;
+  color: #333;
+}
+    footer {
+        background-color: white; /* Fundo branco */
+        color: #000000; /* Texto em roxo */
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .footer-container {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .footer-logo {
+        margin-bottom: 30px;
+    }
+
+    .footer-logo img {
+        width: 150px; /* Ajuste o tamanho da logo conforme necessário */
+    }
+
+    .footer-sections {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .footer-col {
+        flex: 1;
+        margin: 10px 20px;
+        min-width: 200px;
+    }
+
+    .footer-col h3 {
+        color: #000000; /* Títulos em roxo */
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .footer-col ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .footer-col ul li {
+        margin: 10px 0;
+    }
+
+    .footer-col ul li a {
+        color: #000000; /* Links em roxo */
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .footer-col ul li a:hover {
+        text-decoration: underline;
+    }
+
+    .footer-bottom {
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: 1px solid #000000; /* Linha roxa */
+    }
+
+    .social-icons a {
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    .social-icons img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer-bottom p {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+</style>
+
+    
+    <meta name="description" content="Simple landind page" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
+    <!--Replace with your tailwind.css once created-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
+    <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
+    <style>
+     
+
+
+      .gradient {
+        background: linear-gradient(90deg, #000000 0%, #000000 90%);
+      }
+      /* CSS: Definindo a animação de flutuação e rotação */
+
+
+    </style>
+  </head>
+  <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
+    <!--Nav-->
+    <nav id="header" class="fixed w-full z-30 top-0 text-white">
+      <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
+        <div class="pl-4 flex items-center">
+          <a class="toggleColour text-black no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
+            <!--Icon from: http://www.potlabicons.com/ -->
+            <div class="block lg:hidden pr-4">
+              <button id="nav-toggle" class="flex items-center p-1 text-pink-800 hover:text-gray-1300 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                <img src="img/images-removebg-preview (3).png" alt="Novo Ícone" class="h-8 plane-take-off" />
+              </button>
+            </div>
+            <a href="#" class="inline-flex items-center">
+              <img src="img/logo.png" alt="Novo Ícone" class="h-8 plane-take-off" />
+              
+            </a>
+            
+              <title>Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+          </button>
+        </div>
+        <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-black lg:bg-transparent text-black p-4 lg:p-0 z-20" id="nav-content">
+          <ul class="list-reset lg:flex justify-end flex-1 items-center">
+            <li class="mr-3">
+              <a class="inline-block py-2 px-4 text-black font-bold no-underline" href="#">Beneficios</a>
+            </li>
+            <li class="mr-3">
+              <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#">Como Funciona</a>
+            </li>
+            <li class="mr-3">
+              <a class="inline-block text-blacl no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#">Depoimentos</a>
+            </li>
+          </ul>
+          <button
+            id="navAction"
+            class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+          >
+            Entre em Contato
+          </button>
+        </div>
+      </div>
+      <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
+    </nav>
+    <div class="banner">
+      <img src="img/lop.jpg" alt="Banner" class="banner-image" />
+      <div class="banner-content">
+        <h1 class="banner-headline">Sua Página de Vendas Profissional por Apenas R$99,90 </h1>
+        <h2 class="banner-subtitle">Pronta para transformar seu negócio? Obtenha uma solução moderna e de fácil manutenção</h2>
+        <a href="#servicos" class="banner-button">Saiba Mais</a>
+      </div>
+    </div>
+    
+    
+    <script>
+window.addEventListener("scroll", function() {
+  const banner = document.querySelector(".banner");
+  const bannerPosition = banner.getBoundingClientRect().top;
+  const screenPosition = window.innerHeight / 1.5;
+
+  if (bannerPosition < screenPosition) {
+    banner.classList.add("visible");
+  }
+});
+
+    </script>
+    <div class="relative -mt-12 lg:-mt-24">
+      <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g transform="translate(-2.000000, 44.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <path d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496" opacity="0.100000001"></path>
+            <path
+              d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
+              opacity="0.100000001"
+            ></path>
+            <path d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z" id="Path-4" opacity="0.200000003"></path>
+          </g>
+          <g transform="translate(-4.000000, 76.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <path
+              d="M0.457,34.035 C57.086,53.198 98.208,65.809 123.822,71.865 C181.454,85.495 234.295,90.29 272.033,93.459 C311.355,96.759 396.635,95.801 461.025,91.663 C486.76,90.01 518.727,86.372 556.926,80.752 C595.747,74.596 622.372,70.008 636.799,66.991 C663.913,61.324 712.501,49.503 727.605,46.128 C780.47,34.317 818.839,22.532 856.324,15.904 C922.689,4.169 955.676,2.522 1011.185,0.432 C1060.705,1.477 1097.39,3.129 1121.236,5.387 C1161.703,9.219 1208.621,17.821 1235.4,22.304 C1285.855,30.748 1354.351,47.432 1440.886,72.354 L1441.191,104.352 L1.121,104.031 L0.457,34.035 Z"
+            ></path>
+          </g>
+        </g>
+      </svg>
+    </div>
+
+    <section class="bg-white border-b py-8">
+      <div class="container mx-auto flex flex-wrap pt-4 pb-12">
+        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+          Benefícios da Sua Landing Page
+        </h2>
+        <div class="w-full mb-4">
+          <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+        </div>
+    
+        <!-- Lista de Benefícios -->
+        <div class="flex flex-wrap w-full justify-center">
+          <div class="w-full md:w-1/3 p-6 flex flex-col items-center text-center">
+            <div class="flex items-center justify-center bg-gray-100 rounded-full w-16 h-16 mb-4 shadow-lg">
+              <!-- Ícone personalizado para cada benefício -->
+              <img src="img/1.png" alt="Presença Digital" class="h-8 w-8">
+            </div>
+            <h3 class="text-xl font-bold text-gray-800">Aumente sua presença digital em minutos</h3>
+          </div>
+          <div class="w-full md:w-1/3 p-6 flex flex-col items-center text-center">
+            <div class="flex items-center justify-center bg-gray-100 rounded-full w-16 h-16 mb-4 shadow-lg">
+              <img src="img/2.png" alt="Página Responsiva" class="h-8 w-8">
+            </div>
+            <h3 class="text-xl font-bold text-gray-800">Página moderna e responsiva</h3>
+          </div>
+          <div class="w-full md:w-1/3 p-6 flex flex-col items-center text-center">
+            <div class="flex items-center justify-center bg-gray-100 rounded-full w-16 h-16 mb-4 shadow-lg">
+              <img src="img/3.png" alt="Fácil Manutenção" class="h-8 w-8">
+            </div>
+            <h3 class="text-xl font-bold text-gray-800">Fácil manutenção, sem complicações</h3>
+          </div>
+        </div>
+    
+        <!-- Depoimento Visual -->
+        <div class="w-full mt-12 p-6 bg-gray-50 rounded-lg shadow-lg">
+          <div class="text-center text-gray-800 text-xl font-semibold mb-4">Um de nossos clientes</div>
+          <p class="text-center text-gray-700 italic">"Eu estava precisando de uma página de vendas há muito tempo, mas sempre achava tudo caro ou complicado demais, o Murilo me ajudou a entender um pouco melhor e adaptou a proposta para ajudar meu negócio achei muito show de verdade. valeu ai"</p>
+          <p class="text-center mt-4 font-bold text-gray-800">- Cliente Satisfeito</p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="bg-white border-b py-8">
+      <div class="container mx-auto flex flex-wrap pt-4 pb-12">
+        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+          Como vai ser o Produto?
+        </h2>
+        <div class="w-full mb-4">
+          <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+        </div>
+    
+        <!-- Imagens de Exemplos -->
+        <div class="w-full flex justify-center mb-8">
+          <div class="flex flex-col md:flex-row gap-6">
+            <img src="img/4.png" alt="Modelo de Landing Page 1" class="w-full md:w-1/3 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out">
+          </div>
+        </div>
+    
+<!-- Galeria de Customizações -->
+<div class="w-full flex flex-col md:flex-row items-center justify-between mb-12 bg-black p-8 rounded-lg shadow-lg">
+  <div class="w-full md:w-1/2 text-center md:text-left p-6">
+    <h3 class="text-3xl font-bold text-white">Opções de Customização</h3>
+    <p class="text-gray-300 mt-2 mb-4">Personalize sua landing page com cores, layouts e CTAs exclusivos. Nosso sistema permite personalizações rápidas e intuitivas, sem complicações!</p>
+  </div>
+  <div class="w-full md:w-1/2 flex flex-wrap gap-6 justify-center">
+    <!-- Caixa de Cores -->
+    <div class="bg-gray-900 rounded-lg p-6 shadow-lg text-center hover:bg-gray-700 transition duration-200">
+      <p class="font-bold text-white text-lg">Cores</p>
+      <img src="img/5.webp" alt="Personalização de Cores" class="w-24 h-24 mx-auto mt-2 rounded-full border-2 border-gray-500">
+    </div>
+    <!-- Caixa de Layouts -->
+    <div class="bg-gray-900 rounded-lg p-6 shadow-lg text-center hover:bg-gray-700 transition duration-200">
+      <p class="font-bold text-white text-lg">Layouts</p>
+      <img src="img/6.png" alt="Personalização de Layouts" class="w-24 h-24 mx-auto mt-2 rounded-full border-2 border-gray-500">
+    </div>
+    <!-- Caixa de CTAs -->
+    <div class="bg-gray-900 rounded-lg p-6 shadow-lg text-center hover:bg-gray-700 transition duration-200">
+      <p class="font-bold text-white text-lg">CTAs</p>
+      <img src="img/7.webp" alt="Personalização de CTAs" class="w-24 h-24 mx-auto mt-2 rounded-full border-2 border-gray-500">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+        <!-- Comparação -->
+        <div class="w-full mt-8 p-6 bg-gray-50 rounded-lg shadow-lg">
+          <h3 class="text-center text-2xl font-bold text-gray-800 mb-4">Comparação: Básica vs Profissional</h3>
+          <div class="flex flex-col md:flex-row justify-around items-center">
+            <div class="text-center p-4">
+              <h4 class="text-xl font-semibold text-gray-700">Página Básica</h4>
+              <img src="img/12.png" alt="Página Básica" class="w-full md:w-64 rounded-lg shadow-md mt-2">
+              <p class="mt-2 text-gray-600">Funcional, mas com menos elementos de personalização e design.</p>
+            </div>
+            <div class="text-center p-4">
+              <h4 class="text-xl font-semibold text-gray-700">Página Profissional</h4>
+              <img src="img/13.png" alt="Página Profissional" class="w-full md:w-64 rounded-lg shadow-md mt-2">
+              <p class="mt-2 text-gray-600">Design sofisticado, alta conversão e mais opções de personalização.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <section class="relative bg-cover bg-center py-12 px-8" style="background-image: url('link-da-imagem-de-fundo.jpg');">
+      <div class="bg-black bg-opacity-75 inset-0 absolute"></div>
+      <div class="relative container mx-auto flex flex-wrap lg:flex-nowrap items-center space-y-8 lg:space-y-0 lg:space-x-12">
+        
+        <!-- Texto Principal e Banner -->
+        <div class="w-full lg:w-2/3 text-white">
+          <h2 class="text-5xl font-bold text-center lg:text-left mb-6">
+            Oferta Especial
+          </h2>
+          <div class="h-1 w-48 mx-auto lg:mx-0 bg-white opacity-50 rounded-full mb-6"></div>
+          
+          <!-- Banner de Promoção -->
+          <div class="bg-gray-800 bg-opacity-75 p-6 rounded-lg shadow-lg mb-8 lg:mb-6">
+            <h3 class="text-3xl font-semibold text-white text-center lg:text-left">Oferta por Tempo Limitado</h3>
+            <p class="text-gray-300 text-xl mt-2 text-center lg:text-left">
+              Garanta sua página por <span class="font-bold text-white">R$99,90</span> para as 100 primeiras vendas!
+            </p>
+          </div>
+          
+          <!-- Contador Regressivo -->
+          <div class="bg-gray-900 bg-opacity-75 p-6 rounded-lg shadow-md text-center mb-8 w-full lg:w-64 mx-auto lg:mx-0">
+            <h4 class="text-xl font-semibold text-gray-300">Tempo Restante</h4>
+            <div id="countdown" class="text-3xl font-bold text-white mt-2">00:00:00</div>
+          </div>
+          
+          <!-- Botão CTA com Gradiente -->
+          <div class="flex justify-center lg:justify-start">
+            <button class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white font-bold rounded-full py-4 px-8 shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out focus:outline-none focus:shadow-outline">
+              Comece por R$99,90
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    <!-- Script do Contador Regressivo -->
+    <script>
+      const countdown = document.getElementById('countdown');
+      const targetDate = new Date().getTime() + (24 * 60 * 60 * 1000); // Define o tempo de contagem regressiva (24 horas)
+    
+      const interval = setInterval(() => {
+        const now = new Date().getTime();
+        const distance = targetDate - now;
+    
+        if (distance < 0) {
+          clearInterval(interval);
+          countdown.innerHTML = "Tempo Esgotado";
+          return;
+        }
+    
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+        countdown.innerHTML = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+      }, 1000);
+    </script>
+    
+    <section class="bg-white border-b py-8">
+      <div class="container mx-auto flex flex-wrap pt-4 pb-12">
+        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+          Depoimentos de Clientes
+        </h2>
+        <div class="w-full mb-4">
+          <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+        </div>
+    
+        <!-- Seção de Feedback -->
+        <div class="w-full flex flex-wrap justify-center mb-8 gap-8">
+          <!-- Depoimento 1 -->
+          <div class="w-full md:w-1/3 bg-gray-50 rounded-lg shadow-lg p-6 text-center">
+            <p class="text-gray-800 font-semibold text-lg">"Excelente página! Meu negócio online teve um grande crescimento."</p>
+            <div class="mt-4 flex justify-center">
+              <!-- Avaliação com estrelas -->
+              <span class="text-yellow-500">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            </div>
+            <p class="mt-2 text-gray-600 italic">– João Silva, Proprietário de Loja Virtual</p>
+          </div>
+          
+          <!-- Depoimento 2 -->
+          <div class="w-full md:w-1/3 bg-gray-50 rounded-lg shadow-lg p-6 text-center">
+            <p class="text-gray-800 font-semibold text-lg">"Eles consiguiram fazer as manutenções que queria muito rápido e os resultados foram além do esperado."</p>
+            <div class="mt-4 flex justify-center">
+              <span class="text-yellow-500">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            </div>
+            <p class="mt-2 text-gray-600 italic">– Marina Lopes, Consultora de Marketing</p>
+          </div>
+        </div>
+    
+        <!-- Exemplo de Resultado Real -->
+        <div class="w-full bg-gray-100 p-6 rounded-lg shadow-lg mt-8">
+          <h3 class="text-2xl font-bold text-gray-800 text-center mb-4">História de Sucesso</h3>
+          <p class="text-center text-gray-700 font-semibold text-lg mb-2">"Com meu trabalho e esforço mais a página junto a outras estratégias, aumentei meus leads em 300%, fez eu volar a ver a credibilidade que uma página traz para meu negócio."</p>
+          <p class="text-center text-gray-600 italic">– Ana Santos, Coach de Carreira</p>
+          <div class="flex justify-center mt-4">
+            <img src="img/gráficocontect.png" alt="Gráfico de Aumento de Leads" class="w-full md:w-1/2 rounded-lg shadow-md">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-50 border-b py-8">
+      <div class="container mx-auto flex flex-wrap pt-4 pb-12">
+        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+          Perguntas Frequentes (FAQ)
+        </h2>
+        <div class="w-full mb-4">
+          <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+        </div>
+    
+        <!-- Perguntas Comuns -->
+        <div class="w-full md:w-3/4 mx-auto">
+          <div class="mb-4 p-6 bg-white rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold text-gray-800">É possível personalizar minha landing page?</h3>
+            <p class="text-gray-700 mt-2">Sim! Oferecemos várias opções de personalização, como cores, layout e botões de chamada para ação (CTA), para garantir que sua página atenda às necessidades específicas do seu negócio.</p>
+          </div>
+          <div class="mb-4 p-6 bg-white rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold text-gray-800">Preciso ter conhecimentos técnicos?</h3>
+            <p class="text-gray-700 mt-2">Não! Nossa plataforma é desenvolvida para que seja simples alterar e conseguimos atenção total para manutenções, então sua página pronta para promover seu negócio online.</p>
+          </div>
+          <div class="mb-4 p-6 bg-white rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold text-gray-800">Quais são as formas de pagamento?</h3>
+            <p class="text-gray-700 mt-2">Aceitamos várias formas de pagamento, incluindo cartão de crédito, boleto bancário e transferência. Oferecemos segurança e flexibilidade para sua conveniência.</p>
+          </div>
+        </div>
+    
+        <!-- Solução de Problemas e Suporte -->
+        <div class="w-full md:w-3/4 mx-auto mt-8 p-6 bg-gray-100 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-semibold text-gray-800 text-center mb-4">Suporte e Facilidade de Uso</h3>
+          <p class="text-gray-700 text-center">Nossa plataforma foi projetada para que você possa alterar com o tempo e com nossa ajuda, mantemos uma boa relação com nosso clientes, sua landing page sem complicações. Se precisar de ajuda, nossa equipe de suporte está disponível para orientar você em cada etapa do processo.</p>
+          <div class="flex justify-center mt-4">
+            <a href="contato-suporte.html" class="bg-blue-500 text-white font-bold rounded-full py-3 px-6 shadow-lg hover:bg-blue-600 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+              Contate o Suporte
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!-- Change the colour #f8fafc to match the previous section colour -->
+    <svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
+          <g class="wave" fill="#f8fafc">
+            <path
+              d="M1440,84 C1383.555,64.3 1342.555,51.3 1317,45 C1259.5,30.824 1206.707,25.526 1169,22 C1129.711,18.326 1044.426,18.475 980,22 C954.25,23.409 922.25,26.742 884,32 C845.122,37.787 818.455,42.121 804,45 C776.833,50.41 728.136,61.77 713,65 C660.023,76.309 621.544,87.729 584,94 C517.525,105.104 484.525,106.438 429,108 C379.49,106.484 342.823,104.484 319,102 C278.571,97.783 231.737,88.736 205,84 C154.629,75.076 86.296,57.743 0,32 L0,0 L1440,0 L1440,84 Z"
+            ></path>
+          </g>
+          <g transform="translate(1.000000, 15.000000)" fill="#FFFFFF">
+            <g transform="translate(719.500000, 68.500000) rotate(-180.000000) translate(-719.500000, -68.500000) ">
+              <path d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496" opacity="0.100000001"></path>
+              <path
+                d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
+                opacity="0.100000001"
+              ></path>
+              <path d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z" opacity="0.200000003"></path>
+            </g>
+          </g>
+        </g>
+      </g>
+    </svg>
+    <section class="container mx-auto text-center py-6 mb-12">
+      <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
+      Entre em contato
+      </h2>
+      <div class="w-full mb-4">
+        <div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
+      </div>
+      <h3 class="my-4 text-3xl leading-tight">
+       Tenha uma presença online, apareça, senão niguém vai ver você!
+      </h3>
+      <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+        Chama Ai!
+      </button>
+    </section>
+    <!--Footer-->
+    <footer>
+      <div class="footer-container">
+          <!-- Logo -->
+          <div class="footer-logo">
+              <img src="img/logo.png" alt="Logo da Empresa" />
+          </div>
+  
+          <!-- Seção com 3 colunas: Sobre, Links Rápidos, Contato -->
+          <div class="footer-sections">
+              <!-- Sobre Nós -->
+              <div class="footer-col">
+                  <h3>Sobre Nós</h3>
+                  <p>Nossa missão é oferecer as melhores páginas para nosso clientes com intuito de ajudar você a vender mais.</p>
+              </div>
+  
+              <!-- Links Rápidos -->
+              <div class="footer-col">
+                  <h3>Links Rápidos</h3>
+                  <ul>
+                      <li><a href="http://localhost/TT/profissionais">contato</a></li>
+                      <li><a href="#">beneficios</a></li>
+                      <li><a href="#">como funciona</a></li>
+                      <li><a href="#bg-white border-b py-8">Depoimentos</a></li>
+                  </ul>
+              </div>
+  
+              <!-- Contato -->
+              <div class="footer-col">
+                  <h3>Contato</h3>
+                  <ul>
+                      <li>Email: <a href="mailto:contato@terapias.com.br">contato@terapias.com.br</a></li>
+                      <li>Telefone: (99) 99999-9999</li>
+                      <li>Endereço: Rua das Terapias, 123, Cidade, Estado</li>
+                  </ul>
+              </div>
+          </div>
+  
+          <!-- Redes Sociais -->
+          <div class="footer-bottom">
+              <p>Siga-nos nas redes sociais:</p>
+              <div class="social-icons">
+                  <a href="#"><img src="imagens/facebook.png" alt="Facebook"></a>
+                  <a href="#"><img src="imagens/instagram.png" alt="Instagram"></a>
+                  <a href="#"><img src="imagens/whatsapp.png" alt="Twitter"></a>
+              </div>
+          </div>
+      </div>
+  </footer>
+    <!-- jQuery if you need it
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  -->
+    <script>
+      var scrollpos = window.scrollY;
+      var header = document.getElementById("header");
+      var navcontent = document.getElementById("nav-content");
+      var navaction = document.getElementById("navAction");
+      var brandname = document.getElementById("brandname");
+      var toToggle = document.querySelectorAll(".toggleColour");
+
+      document.addEventListener("scroll", function () {
+        /*Apply classes for slide in bar*/
+        scrollpos = window.scrollY;
+
+        if (scrollpos > 10) {
+          header.classList.add("bg-white");
+          navaction.classList.remove("bg-white");
+          navaction.classList.add("gradient");
+          navaction.classList.remove("text-gray-800");
+          navaction.classList.add("text-white");
+          //Use to switch toggleColour colours
+          for (var i = 0; i < toToggle.length; i++) {
+            toToggle[i].classList.add("text-gray-800");
+            toToggle[i].classList.remove("text-white");
+          }
+          header.classList.add("shadow");
+          navcontent.classList.remove("bg-gray-100");
+          navcontent.classList.add("bg-white");
+        } else {
+          header.classList.remove("bg-white");
+          navaction.classList.remove("gradient");
+          navaction.classList.add("bg-white");
+          navaction.classList.remove("text-white");
+          navaction.classList.add("text-gray-800");
+          //Use to switch toggleColour colours
+          for (var i = 0; i < toToggle.length; i++) {
+            toToggle[i].classList.add("text-white");
+            toToggle[i].classList.remove("text-gray-800");
+          }
+
+          header.classList.remove("shadow");
+          navcontent.classList.remove("bg-white");
+          navcontent.classList.add("bg-gray-100");
+        }
+      });
+    </script>
+    <script>
+      /*Toggle dropdown list*/
+      /*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
+
+      var navMenuDiv = document.getElementById("nav-content");
+      var navMenu = document.getElementById("nav-toggle");
+
+      document.onclick = check;
+      function check(e) {
+        var target = (e && e.target) || (event && event.srcElement);
+
+        //Nav Menu
+        if (!checkParent(target, navMenuDiv)) {
+          // click NOT on the menu
+          if (checkParent(target, navMenu)) {
+            // click on the link
+            if (navMenuDiv.classList.contains("hidden")) {
+              navMenuDiv.classList.remove("hidden");
+            } else {
+              navMenuDiv.classList.add("hidden");
+            }
+          } else {
+            // click both outside link and outside menu, hide menu
+            navMenuDiv.classList.add("hidden");
+          }
+        }
+      }
+      function checkParent(t, elm) {
+        while (t.parentNode) {
+          if (t == elm) {
+            return true;
+          }
+          t = t.parentNode;
+        }
+        return false;
+      }
+    </script>
+  </body>
+</html>
